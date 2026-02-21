@@ -1,0 +1,16 @@
+@use "../helpers/variables" as *;
+.main-button {
+    background-color: rgba($redColor, .8);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    min-width: 120px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+        background-color: $redColor;
+    }
+}

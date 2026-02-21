@@ -1,0 +1,66 @@
+header .logo {
+  float: right;
+}
+@media (min-width: 992px) {
+  header .logo {
+    float: right;
+    text-align: right;
+  }
+}
+@media (min-width: 992px) {
+  header .navbar {
+    float: right;
+  }
+}
+header .navbar li {
+  float: right;
+}
+header .menu {
+  float: left;
+}
+
+@media (min-width: 992px) {
+  .services .service-box {
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .our-players .player-box {
+    float: right;
+  }
+}
+@media (min-width: 992px) {
+  .our-players .player-box {
+    text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .lorem-ipsum .lorem-box {
+    float: right;
+  }
+}
+
+.footer .gallery,
+.footer .info,
+.footer .contact {
+  float: right;
+}
+@media (min-width: 768px) {
+  .footer .gallery .img-box img {
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  .footer .gallery .img-box .text {
+    float: right;
+  }
+}
+.footer .copyright .text,
+.footer .copyright .author {
+  float: right;
+}
+.footer .copyright .author {
+  text-align: left;
+}

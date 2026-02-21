@@ -1,0 +1,76 @@
+@use "../helpers/variables" as *;
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid $greyColor;
+  overflow: hidden;
+  .logo {
+    float: $float-left;
+    @media #{$minSmall} {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+    @media #{$minMedium} {
+      width: 30%;
+      float: $float-left;
+      text-align: $text-left;
+    }
+    h1 {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: $redColor;
+    transition: $transition;
+    @media #{$maxMobile} {
+      transform: translateY(-150px);
+      &.active {
+        transform: translateY(0) !important;
+        width: 100%;
+        float: none;
+        margin-top: 30px;
+        li {
+          width: 100%;
+        }
+      }
+    }
+    @media #{$minSmall} {
+      border-radius: 15px;
+      display: block;
+      width: 100%;
+      float: none;
+      margin-top: 30px;
+    }
+    @media #{$minMedium} {
+      width: 70%;
+      float: $float-left;
+      margin-top: 1em;
+    }
+    li {
+      width: 20%;
+      float: $float-left;
+      font-size: 18px;
+      text-align: center;
+      a {
+        display: block;
+        padding: 20px 10px;
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          color: #ddd;
+        }
+      }
+    }
+  }
+  .menu {
+    display: block;
+    float: $float-right;
+    margin-top: 33px;
+    cursor: pointer;
+    @media #{$minSmall} {
+      display: none;
+    }
+  }
+}

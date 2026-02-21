@@ -1,0 +1,79 @@
+@use "../sass/helpers/variables" as *;
+$float-left: right;
+$float-right: left;
+$text-left: right;
+$text-right: left;
+header {
+  .logo {
+    float: $float-left;
+    @media #{$minMedium} {
+      float: $float-left;
+      text-align: $text-left;
+    }
+  }
+  .navbar {
+    @media #{$minMedium} {
+      float: $float-left;
+    }
+    li {
+      float: $float-left;
+    }
+  }
+  .menu {
+    float: $float-right;
+  }
+}
+.services {
+  .service-box {
+    @media #{$minMedium} {
+      float: $float-left;
+    }
+  }
+}
+.our-players {
+  .player-box {
+    @media #{$minSmall} {
+      float: $float-left;
+    }
+    @media #{$minMedium} {
+      text-align: $text-left;
+    }
+  }
+}
+.lorem-ipsum {
+  .lorem-box {
+    @media #{$minSmall} {
+      float: $float-left;
+    }
+  }
+}
+.footer {
+  .gallery,
+  .info,
+  .contact {
+    float: $float-left;
+  }
+  .gallery {
+    .img-box {
+      img {
+        @media #{$minSmall} {
+          float: $float-left;
+        }
+      }
+      .text {
+        @media #{$minSmall} {
+          float: $float-left;
+        }
+      }
+    }
+  }
+  .copyright {
+    .text,
+    .author {
+      float: $float-left;
+    }
+    .author {
+      text-align: $text-right;
+    }
+  }
+}
